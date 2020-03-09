@@ -203,15 +203,15 @@ def most_points_scored
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          if player[:shoe] > big_shoes
-            big_shoes = player[:shoe]
-            big_rebounds = player[:rebounds]
+          if player[:point] > big_scores
+            big_scores = player[:points]
+            big_score = player[:points]
           end
         end
       end
     end
   end
-  big_rebounds
+  big_score 
 end
 
 
