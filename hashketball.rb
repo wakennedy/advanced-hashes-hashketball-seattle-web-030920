@@ -215,7 +215,10 @@ def most_points_scored
 end
 
 def winning_team
-  
+  score_team_a = 0 
+  score_team_b = 0 
+  game_hash.each do |place, team|
+    
 end
 
 
