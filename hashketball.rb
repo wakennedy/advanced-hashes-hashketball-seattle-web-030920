@@ -229,11 +229,3 @@ def winning_team
   end
   team_name
 end
-
-
-
-
-
-
-
-
