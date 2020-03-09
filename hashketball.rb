@@ -217,8 +217,23 @@ end
 def winning_team
   score_team_a = 0 
   score_team_b = 0 
-  game_hash.each do |place, team|
-    
+    game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          if player[]
+          
+          
+          if player[:points] > big_scores
+            
+            
+            big_scores = player[:points]
+            big_score = player[:player_name]
+          end
+        end
+      end
+    end
+  end
 end
 
 
